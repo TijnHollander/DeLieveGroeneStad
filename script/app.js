@@ -1,3 +1,7 @@
-var onClick = document.getElementById("nav-toggle");
-var NavbarList = document.getElementById("nav-list")
-onClick.addEventListener('click', () => {NavbarList.classList.toggle("active");});
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }

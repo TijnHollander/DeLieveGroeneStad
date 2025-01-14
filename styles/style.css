@@ -7,110 +7,73 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: white;
     overflow-x: hidden;
+    background-color: #3e2413;
   }
-  
+
   header {
     position: sticky;
     top: 0;
     z-index: 99;
+    padding-right: 1.5em;
   }
-  
-  nav {
-    background-color: none;
-    padding: 10px 5%;
+
+  .flexcontainer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  .logo-image {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
   }
   
-  nav a {
-    color: rgb(255, 255, 255);
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font: bold 22px sans-serif;
+    font-size: 25px;
+    color: #818181;
+    display: block;
     transition: 0.3s;
   }
   
-  nav a:hover {
-    color: rgb(131, 66, 224);
+  .sidenav a:hover {
+    color: #f1f1f1;
   }
   
-  .logo-image {
-    display: block;
-    height: 48px
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
   
-  .nav-menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    list-style-image: none;
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
-  
-  .menu-item {
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
-  .bar {
-    width: 20px;
-    height: 3px;
-    color: white;
-    margin: 4px auto;
-    font-size: 2em;
-  }
-  
-  .menu-icon {
-    display: none;
-    color: white;
-    font-size: 22px;
-  }
-  
-  /* responsiveness navbar voor mobiele telefoons */
-  @media only screen and (max-width: 600px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    .logo-container {
-      width: 100%;
-    }
-  
-    .menu-item {
-      display: block;
-      width: 100%;
-      padding: 5px 0;
-      text-align: end;
-    }
-  
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 5%;
-      background: none;
-      border: none;
-    }
-  
-    .menu-icon:hover .bar {
-      background-color: rgb(122, 30, 226);
-    }
-  
-    .nav-menu {
-      display: none;
-      width: 100%;
-    }
-  
-    .active {
-      display: block;
-    }
-  }
+  /* Einde navbar */
   
   .hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/boompie.png') no-repeat center center/cover;
+    height: 50vh;
+    width: 100%;
+    background: url('../images/boompieCropped.png') no-repeat center center/cover;
     color: #fff;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,25 +288,6 @@
     }
   }
   
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-menu.active {
-      display: flex;
-    }
-  }
   
   @media (max-width: 844px) {
     .cards {
