@@ -1,321 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: white;
-    overflow-x: hidden;
-    background-color: #3e2413;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-    padding-right: 1.5em;
-  }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  overflow-x: hidden;
+}
 
-  .flexcontainer{
-    display: flex;
-    justify-content: space-between;
-  }
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding-right: 1.5em;
+}
 
-  .logo-image {
-    max-width: 50px;
-    max-height: 50px;
-  }
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-image {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hamburger-menu {
+  font-size: 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #3e2413;
+}
+
+@media screen and (max-height: 450px) {
   .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 15px;
   }
-  
+
   .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    font-size: 18px;
   }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+}
 
-  .hamburger-menu {
-    font-size: 32px;
-    background-color: #3e2413;
-    border-radius: 12px;
-    cursor: pointer;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  /* Einde navbar */
-  
-  .hero {
-    height: 100vh;
-    width: 100%;
-    background: url('../images/boompieCropped.png') no-repeat center center/cover;
-    color: #fff;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    animation: fadeIn 5s;
-  }
-  
-  .hero-primary {
-    font-size: 10vw;
-    color: black;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .text-box {
-    max-width: 600px;
-  }
-  
-  .video-box {
-    margin: 2em;
-  }
-  
-  .teaser-video {
-    max-width: 100%;
-    object-fit: contain;
-    height: 600px;
-    border-radius: 10px;
-  }
-  
-  .introduction-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2em;
-  }
-  
-  .inner-text {
-    width: 30em;
-  }
+/* Einde navbar */
 
-  section p {
-    font-family: "Lato", serif;
-    font-weight: 400;
-  }
-  
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 2rem;
-  }
-  
-  .card {
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-  }
-  
-  .card h2 {
-    padding: 0.4em;
-  }
-  
-  .card p {
-    padding: 1em;
-  }
-  
-  .cards-about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 2rem;
-    max-width: 100%;
-    text-align: center;
-  }
-  
-  .card-about img {
-    max-width: 100%;
-    width: 30em;
-    height: 30em;
-    object-fit: cover;
-    filter: blur(00.5rem);
-    transition: 0.3s;
-  }
-  
-  .card-about img:hover {
-    filter: blur(0rem);
-  }
-  .card-about img:focus {
-    filter: blur(0rem);
-  }
-  
-  .card-about {
-    display: grid;
-    align-content: center;
-  }
-  
-  .card-about h2 {
-    padding: 0.4em;
-  }
-  
-  .card-about p {
-    padding: 1em;
-  }
-  
-  .card-podcasts {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 7px;
-    border-radius: 12px;
-    text-align: center;
-  }
-  
-  .card-podcasts img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-  }
-  
-  .card-podcasts h2 {
-    padding: 1em;
-  }
-  
-  .card-podcasts p {
-    padding: 1em;
-  }
-  
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
-  }
-  
-  .see-more-episodes-btn {
-    text-decoration: none;
-    padding: 1em 2em;
-    border: 2px solid #000;
-    border-radius: 5px;
-    background: #fff;
-    color: #000;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .see-more-episodes-btn:hover {
-    background: #000;
-    color: #fff;
-  }
-  
-  .see-more-episodes-btn:focus {
-    outline: 2px solid #fff;
-    background: #000;
-    color: #fff;
-  }
-  
-  footer {
-    background-color: #000;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  footer .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+.hero {
+  height: 80vh;
+  width: 100%;
+  background: url('../images/boompieCropped.png') no-repeat center center/cover;
+  color: #fff;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  animation: fadeIn 5s;
+}
+
+.hero-primary {
+  font-size: 10vw;
+  color: black;
+  font-family: "Playfair Display", serif;
+}
+
+.text-box {
+  max-width: 600px;
+}
+
+.introduction-text {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+  background-color: #3e2413;
+}
+
+.inner-text {
+  width: 30em;
+}
+
+section p {
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.card h2 {
+  padding: 0.4em;
+}
+
+.card p {
+  padding: 1em;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.see-more-episodes-btn {
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.see-more-episodes-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.see-more-episodes-btn:focus {
+  outline: 2px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+footer {
+  background-color: #3e2413;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.footer-column h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-column p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-column a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
   .footer-columns {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .footer-column {
-    flex: 1;
-    padding: 0 1rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
   }
-  
-  .footer-column h3 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    color: #fff;
+}
+
+
+@media (max-width: 844px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  
-  .footer-column p {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .footer-column a {
-    color: #7b7b7b;
-    text-decoration: none;
+
+  100% {
+    opacity: 1;
   }
-  
-  .footer-column a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 600px) {
-    .footer-columns {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-column {
-      padding: 0;
-      margin-bottom: 1.5rem;
-    }
-  }
-  
-  
-  @media (max-width: 844px) {
-    .cards {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  
+}
