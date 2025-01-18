@@ -100,6 +100,22 @@ nav {
   animation: fadeIn 5s;
 }
 
+.hero-kas {
+  height: 50vh;
+  width: 100%;
+  background: url('../images/hermitage.png')no-repeat center/cover;
+  background-color: #7b7b7b;
+  color: #fff;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  animation: fadeIn 5s;
+}
+
 .hero-primary {
   font-size: 10vw;
   color: black;
