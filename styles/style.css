@@ -152,6 +152,13 @@ section p {
   margin: 2rem;
 }
 
+.cards-gallerie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0.5em;
+}
+
 .card {
   text-align: center;
 }
