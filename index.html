@@ -1,95 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - De Groene Galerie</title>
     <link rel="icon" type="image/x-icon" href="./images/logoHortus.png">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./script/app.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/app.js" defer></script>
     <script src="https://kit.fontawesome.com/1b8a2d6ef3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav aria-label="Navigatie">
+        <nav>
             <section id="mySidenav" class="sidenav">
+                <!--List toevoegen-->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Home</a>
                 <a href="./pages/gallerie.html">Online gallerie</a>
                 <a href="./pages/kastotdeur.html">Van Kas tot Deur</a>
             </section>
             <section class="flexcontainer">
-                <article>
+                <div>
                     <img class="logo-image" src="./images/logoHortus.png" alt="De Groene Galerie Logo">
-                </article>
-                <article>
+                </div>
+                <div>
                     <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
-                </article>
+                </div>
             </section>
         </nav>
     </header>
-
     <main>
         <section class="hero">
-            <article class="text-box">
+            <div class="text-box">
+                <!--class h1 weghalen-->
                 <h1 class="hero-primary">Hortus Botanicus</h1>
-            </article>
+            </div>
         </section>
-
         <section class="introduction-text">
-            <article class="inner-text">
+            <div class="inner-text">
                 <h2>Over de Hortus</h2>
-                <p>De Hortus Botanicus Amsterdam is een van de oudste botanische tuinen over de gehele wereld, het is
+                <p>
+                    De Hortus Botanicus Amsterdam is een van de oudste botanische tuinen over de gehele wereld, het is
                     een erg geliefde tuin zowel door toeristen als de Amsterdammers zelf. De Hortus biedt duizenden
                     plantsoorten uit alle hoeken van de hele wereld. Het is een plek waar duurzaamheid en divisersiteit
                     centraal staat. Of je nu door de serene kassen loopt, of de iconische palmenkas overal zie je wel
-                    een stukje groen.</p>
-            </article>
+                    een stukje groen.
+                </p>
+            </div>
         </section>
-
-        <section class="container cards">
-            <article class="card">
+        <div class="container cards">
+            <section class="card">
                 <img src="./images/previewHortus.jpg" alt="Hortus botanicus foto van de binnen kas">
-                <h3>De Opdracht</h3>
-                <p>Mijn naam is Tijn Hollander, ik ben 20 jaar en studeer aan CMD aan het HvA. Voor het project "De
+                <h2>De Opdracht</h2>
+                <p>
+                    Mijn naam is Tijn Hollander, ik ben 20 jaar en studeer aan CMD aan het HvA. Voor het project "De
                     Lieve Groene Stad" heb ik ervoor gekozen om de Hortus Botanicus Amsterdam als centraal duurzaam
                     onderwerp te kiezen. Ik heb hiervoor gekozen omdat de Hortus unieke manieren gebruikt om zo duurzaam
-                    mogelijk te zijn, en zelf vind ik de Hortus ook een interessant onderwerp.</p>
-            </article>
-            <article class="card">
+                    mogelijk te zijn, en zelf vind ik de Hortus ook een interessant onderwerp.
+                </p>
+            </section>
+            <section class="card">
                 <img src="./images/preview2Hortus.jpg" alt="Hortus botanicus informatie bord">
-                <h3>Duurzaamheid</h3>
-                <p>De Hortus stelt duurzaamheid Centraal, zo doen zij er alles aan om alles zo duurzaam mogelijk te
+                <h2>Duurzaamheid</h2>
+                <p>
+                    De Hortus stelt duurzaamheid Centraal, zo doen zij er alles aan om alles zo duurzaam mogelijk te
                     maken. Zo denken zij aan duurzaam onderwijs doormiddel van het econasium of verwerken ze afval met
                     de plantage, ook heb ze een zeer interessante manier om energie te besparen met de hermitage, wil je
-                    hier meer over weten? klik dan de knop hieronder.</p>
-            </article>
-        </section>
-
+                    hier meer over weten? klik dan de knop hieronder.
+                </p>
+            </section>
+        </div>
         <section class="btn-container">
             <a href="./pages/galerie.html" class="see-more-btn">Meer weten?</a>
         </section>
     </main>
-
     <footer>
-        <section class="footer-content">
+        <!--a in list-->
+        <div class="footer-content">
             <p>&copy;Tijn Hollander</p>
-            <section class="footer-columns">
-                <article class="footer-column">
+            <div class="footer-columns">
+                <section class="footer-column">
                     <h3>Contact</h3>
                     <p>Email: <a href="mailto:tijn.hollander@hva.nl">example@hva.nl</a></p>
                     <p>Phone: +123 456 789</p>
-                </article>
+                </section>
                 <article class="footer-column">
                     <h3>Pagina's</h3>
-                    <p><a href="#">Home</a></p>
-                    <p><a href="./pages/galerie.html">Online Galerie</a></p>
-                    <p><a href="./pages/kastotdeur.html">Van Kas tot Deur</a></p>
+                    <a href="#">Home</a>
+                    <a href="./pages/galerie.html">Online Galerie</a>
+                    <a href="./pages/kastotdeur.html">Van Kas tot Deur</a>
                 </article>
-            </section>
-        </section>
+            </div>
+        </div>
     </footer>
 </body>
 
