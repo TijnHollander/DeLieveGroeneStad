@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,13 @@
 
 <body>
     <header>
-        <nav aria-label="Navigatie">
-            <section id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="../index.html">Home</a>
-                <a href="./gallerie.html">Online gallerie</a>
-                <a href="./kastotdeur.html">Van Kas tot Deur</a>
-            </section>
+        <nav>
+            <ul id="mySidenav" class="sidenav">
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallerie.html">Online gallerie</a></li>
+                <li><a href="kastotdeur.html">Van Kas tot Deur</a></li>
+            </ul>
             <section class="flexcontainer">
                 <article>
                     <img class="logo-image" src="../images/logoHortus.png" alt="De Groene Galerie Logo">
@@ -46,16 +46,16 @@
 
         <section class="container cards-gallerie">
             <article class="card">
-                <img src="../images/aloe.jpg " alt="App anti-social-club foto">
+                <img src="../images/aloe.jpg " alt="Aloe vera plantje">
             </article>
             <article class="card">
-                <img src="../images/gallerij&historie.jpg" alt="App anti-social-club foto">
+                <img src="../images/gallerij&historie.jpg" alt="Gallerij en historie hortus botanicus">
             </article>
             <article class="card">
-                <img src="../images/binnenkas.jpg " alt="App anti-social-club foto">
+                <img src="../images/binnenkas.jpg " alt="Foto binnenkas Hortus Botanicus">
             </article>
             <article class="card">
-                <img src="../images/gallerijblaadjes.jpg" alt="App anti-social-club foto">
+                <img src="../images/gallerijblaadjes.jpg" alt="Foto gallerij met allemaal blaadjes">
             </article>
         </section>
         </section>
@@ -70,12 +70,12 @@
                     <p>Email: <a href="mailto:tijn.hollander@hva.nl">example@hva.nl</a></p>
                     <p>Phone: +123 456 789</p>
                 </article>
-                <article class="footer-column">
-                    <h3>Pagina's</h3>
-                    <p><a href="#">Home</a></p>
-                    <p><a href="./pages/galerie.html">Online Galerie</a></p>
-                    <p><a href="./pages/kastotdeur.html">Van Kas tot Deur</a></p>
-                </article>
+                <ul class="footer-column">
+                    <li><h3>Pagina's</h3></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="galerie.html">Online Galerie</a></li>
+                    <li><a href="kastotdeur.html">Van Kas tot Deur</a></li>
+                </ul>
             </section>
         </section>
     </footer>

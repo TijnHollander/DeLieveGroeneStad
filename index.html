@@ -14,13 +14,12 @@
 <body>
     <header>
         <nav>
-            <section id="mySidenav" class="sidenav">
-                <!--List toevoegen-->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Home</a>
-                <a href="./pages/gallerie.html">Online gallerie</a>
-                <a href="./pages/kastotdeur.html">Van Kas tot Deur</a>
-            </section>
+            <ul id="mySidenav" class="sidenav">
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/gallerie.html">Online gallerie</a></li>
+                <li><a href="./pages/kastotdeur.html">Van Kas tot Deur</a></li>
+            </ul>
             <section class="flexcontainer">
                 <div>
                     <img class="logo-image" src="./images/logoHortus.png" alt="De Groene Galerie Logo">
@@ -34,8 +33,7 @@
     <main>
         <section class="hero">
             <div class="text-box">
-                <!--class h1 weghalen-->
-                <h1 class="hero-primary">Hortus Botanicus</h1>
+                <h1>Hortus Botanicus</h1>
             </div>
         </section>
         <section class="introduction-text">
@@ -77,7 +75,6 @@
         </section>
     </main>
     <footer>
-        <!--a in list-->
         <div class="footer-content">
             <p>&copy;Tijn Hollander</p>
             <div class="footer-columns">
@@ -86,12 +83,12 @@
                     <p>Email: <a href="mailto:tijn.hollander@hva.nl">example@hva.nl</a></p>
                     <p>Phone: +123 456 789</p>
                 </section>
-                <article class="footer-column">
-                    <h3>Pagina's</h3>
-                    <a href="#">Home</a>
-                    <a href="./pages/galerie.html">Online Galerie</a>
-                    <a href="./pages/kastotdeur.html">Van Kas tot Deur</a>
-                </article>
+                <ul class="footer-column">
+                    <li><h3>Pagina's</h3></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./pages/galerie.html">Online Galerie</a></li>
+                    <li><a href="./pages/kastotdeur.html">Van Kas tot Deur</a></li>
+                </ul>
             </div>
         </div>
     </footer>
