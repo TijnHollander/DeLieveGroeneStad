@@ -88,6 +88,14 @@ nav {
 
 /* Einde navbar */
 
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
 .hero {
   height: 80vh;
   width: 100%;
@@ -177,7 +185,6 @@ section p {
 }
 
 .card {
-  text-align: center;
   text-align: left;
 }
 
@@ -269,19 +276,6 @@ footer .footer-content {
 .footer-column a:hover {
   text-decoration: underline;
 }
-
-@media (max-width: 600px) {
-  .footer-columns {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-column {
-    padding: 0;
-    margin-bottom: 1.5rem;
-  }
-}
-
 
 @media (max-width: 844px) {
   .cards {
