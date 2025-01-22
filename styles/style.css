@@ -171,7 +171,7 @@ section p {
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin: 2rem;
   
@@ -179,7 +179,7 @@ section p {
 
 .cards-gallerie {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin: 0.5em;
 }
@@ -238,11 +238,6 @@ footer {
   text-align: center;
 }
 
-footer .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .footer-columns {
   display: flex;
   justify-content: space-between;
@@ -253,7 +248,6 @@ footer .footer-content {
 .footer-column {
   flex: 1;
   padding: 0 1rem;
-  text-decoration: none;
   list-style: none;
 }
 
@@ -277,11 +271,7 @@ footer .footer-content {
   text-decoration: underline;
 }
 
-@media (max-width: 844px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
+
 
 @keyframes fadeIn {
   0% {
